@@ -101,9 +101,8 @@ def ab_voting(h,acc,c):
         elif h_w < 0 and c[i] == 1:
             error += 1
     return float(error/len(c))
-#data = np.loadtxt(open('C:/Users/54741/Desktop/UM 1st semester/machine learning/PJ-linear perceptron/skin.txt'),skiprows=0)
-#be careful about skin data domain, its label should be convert to 0 and 1
-data = np.loadtxt(open('C:/Users/54741/Desktop/UM 1st semester/machine learning/PJ-linear perceptron/banknote.csv'),delimiter=",",skiprows=0) #convert cvs table into numberical
+
+data = np.loadtxt(open('(add a path here)/banknote.csv'),delimiter=",",skiprows=0) #convert cvs table into numberical
 np.random.shuffle(data)#shuffle data
 #deal with data
 linearx = preprocessing.normalize(data[:,:-1])#attributes
